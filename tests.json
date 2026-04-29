@@ -1,0 +1,33 @@
+{
+  "devices": [
+    {
+      "name": "Ubuntu VM",
+      "host": "127.0.0.1",
+      "port": 2222,
+      "username": "rana-roy",
+      "password": "RanaP@55word"
+    }
+  ],
+  "tests": [
+    {
+      "name": "Ping Google",
+      "command": "ping -c 4 8.8.8.8",
+      "type": "ping"
+    },
+    {
+      "name": "Check Routing Table",
+      "command": "ip route",
+      "type": "routing"
+    },
+    {
+      "name": "Check Open Ports",
+      "command": "ss -tulnp",
+      "type": "ports"
+    },
+    {
+      "name": "Traceroute Test",
+      "command": "traceroute 8.8.8.8",
+      "type": "traceroute"
+    }
+  ]
+}
